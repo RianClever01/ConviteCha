@@ -98,7 +98,7 @@ finishBtn.onclick = async () => {
         }
 
         if (guest.giftId !== "") {
-            const giftResponse = await fetch("/gifts/${guest.giftId}", {
+            const giftResponse = await fetch(`/gifts/${guest.giftId}`, {
                 method: "PUT"
             });
 

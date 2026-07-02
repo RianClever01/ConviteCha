@@ -3,10 +3,12 @@ import { PrismaClient } from "@prisma/client";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const app = express(); // ðŸ‘ˆ TEM que vir primeiro
+const app = express(); 
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const PORT = process.env.PORT || 3000;
+
 
 const prisma = new PrismaClient();
 
@@ -26,7 +28,7 @@ app.use((req, res, next) => {
 // serve frontend
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.post('/usuarios', async (req, res) => {
+app.post("/usuarios", async (req, res) => {
     const { name, company, giftId } = req.body;
 
     const user = await prisma.user.create({
@@ -56,7 +58,7 @@ app.post('/gifts', async (req, res) => {
 });
 
 // LIST
-app.get('/gifts', async (req, res) => {
+app.get("/gifts", async (req, res) => {
     const gifts = await prisma.gift.findMany();
 
     res.json(gifts);
@@ -64,7 +66,7 @@ app.get('/gifts', async (req, res) => {
 
 
 
-app.put('/gifts/:id', async (req, res) => {
+app.put("/gifts/:id", async (req, res) => {
     const { id } = req.params;
 
     const gift = await prisma.gift.update({
@@ -110,8 +112,8 @@ app.put('/gifts/:id/available', async (req, res) => {
 
     res.json(gift);
 });
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000");
+app.listen(PORT, () => {
+    console.log("Servidor rodando na porta", PORT);
 });
 
 
