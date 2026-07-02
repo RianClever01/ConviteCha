@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chá de Casa Nova</title>
+
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+
+
+    <section id="invite-page">
+
+        <div class="card">
+
+            <div class="icone">
+                🏡
+            </div>
+
+            <h1>Chá de Casa Nova</h1>
+
+            <p class="subtitulo">
+                Um novo lar merece ser comemorado com pessoas especiais.
+            </p>
+
+            <hr>
+
+            <p>
+                Será uma enorme alegria receber você para celebrar esse momento tão importante em nossas vidas.
+            </p>
+
+            <div class="informacoes">
+
+                <p>📅 <strong>22 de Agosto de 2026</strong></p>
+
+                <p>🕓 <strong>16:00</strong></p>
+
+                <p>📍 Rua Exemplo, 123</p>
+
+            </div>
+
+            <button id="signInBtn">
+                Confirmar Presença
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <section id="signIn-page">
+        <div class="card">
+            <h1> Confirme a sua presença! </h1>
+
+            <div class="caixa-input">
+                <label for="name">Digite o seu nome: </label>
+                <input class="input" id="name" placeholder="Seu nome aqui">
+                <label for="company"> É casal ou vai acompanhado? digite o nome do acompanhante: </label>
+                <input class="input" id="company" placeholder="Nome do acompanhante">
+            </div>
+
+            <button id="nextBtn">
+                Próxima página
+            </button>
+        </div>
+
+    </section>
+
+    <section id="gift-page">
+
+        <div class="card">
+            <h1> Lista de presentes para a casa nova </h1>
+
+            <p class="subtitulo">
+                Se você desejar, pode contribuir com a criação de um lar e uma família feliz!.
+            </p>
+
+            <div id="gift-container"></div>
+
+            <div class="button-group">
+                <button id="backToSignInBtn">
+                    Voltar
+                </button>
+                <button id="confirmBtn">
+                    Confirmar Presença
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="confirm-page" style="display:none;">
+        <div class="card">
+
+            <div id="confirmation-box"></div>
+            <div class="button-group">
+                <button id="backToGiftBtn">
+                    Voltar
+                </button>
+                <button id="finishBtn">
+                    Confirmar Presença
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="end-page" style="display:none;">
+        <div class="card">
+            <h1>Sua presença está confirmada!</h1>
+            <p class="subtitulo">Convidado</p>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

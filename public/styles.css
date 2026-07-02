@@ -1,0 +1,287 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+
+body {
+  background: #f5f2ec;
+
+  font-family: Poppins, sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 100vh;
+
+  color: #333;
+}
+
+/* ============================= */
+/* PÁGINA */
+/* ============================= */
+
+#invite-page {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.card {
+  width: 420px;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+/* ============================= */
+
+.icone {
+  font-size: 55px;
+
+  margin-bottom: 15px;
+}
+
+/* ============================= */
+
+h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 42px;
+
+  color: #6b4e3d;
+}
+
+/* ============================= */
+
+.subtitulo {
+  margin-top: 15px;
+
+  font-size: 18px;
+
+  color: #777;
+}
+
+/* ============================= */
+
+hr {
+  margin: 30px 0;
+
+  border: none;
+
+  border-top: 1px solid #ddd;
+}
+
+/* ============================= */
+
+.informacoes {
+  margin-top: 30px;
+}
+
+.informacoes p {
+  margin: 10px 0;
+}
+
+/* ============================= */
+
+button {
+  margin-top: 35px;
+
+  width: 50%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #8b5e3c;
+
+  color: white;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6b4e3d;
+
+  transform: scale(1.03);
+}
+
+#signIn-page {
+  width: 100%;
+
+  display: none;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.caixa-input {
+  margin-top: 20px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 5px;
+}
+
+#gift-page {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#gift-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.gift-card {
+  display: grid;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.gift-box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 16px;
+  border: 1px solid #a70000;
+  border-radius: 12px;
+  border-color: rgb(0, 0, 0);
+  max-width: 100%;
+}
+
+.gift-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  gap: 8px;
+}
+
+.gift-info h3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 1rem;
+  gap: 16px;
+}
+
+.gift-info p {
+  margin: 10;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+}
+
+.gift-info button {
+  width: fit-content;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.gift-info button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#confirm-page {
+  width: 100%;
+
+  display: none;
+
+  justify-content: center;
+
+  align-items: center;
+}
+.confirmation-box {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+  background-color: #3333330c;
+  border-radius: 20px;
+}
+
+.confirmation-box h1 {
+  margin-bottom: 20px;
+}
+
+.confirmation-box p {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+#end-page {
+  width: 100%;
+
+  display: none;
+
+  justify-content: center;
+
+  align-items: center;
+}
+.button-group {
+  display: flex;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+}
