@@ -1,4 +1,4 @@
-﻿const API_URL = "https://convite-ch-de-casa-nova.onrender.com";
+﻿const API_URL = "https://convitecha.onrender.com";
 
 // lista de presentes
 const container = document.querySelector("#gift-container");
