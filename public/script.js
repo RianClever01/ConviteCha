@@ -1,4 +1,4 @@
-﻿const API_URL = "https://convitecha.onrender.com";
+﻿
 
 // lista de presentes
 const container = document.querySelector("#gift-container");
@@ -44,7 +44,7 @@ const guest = {
 
 async function loadGifts() {
     try {
-        const response = await fetch(`${API_URL}/gifts`);
+        const response = await fetch("/gifts");
 
         if (!response.ok) {
             throw new Error("Erro ao carregar presentes");
@@ -85,7 +85,7 @@ confirmBtn.onclick = () => {
 
 finishBtn.onclick = async () => {
     try {
-        const userResponse = await fetch(`${API_URL}/usuarios`, {
+        const userResponse = await fetch("/usuarios", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -98,7 +98,7 @@ finishBtn.onclick = async () => {
         }
 
         if (guest.giftId !== "") {
-            const giftResponse = await fetch(`${API_URL}/gifts/${guest.giftId}`, {
+            const giftResponse = await fetch("/gifts/${guest.giftId}", {
                 method: "PUT"
             });
 
