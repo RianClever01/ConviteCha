@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 // serve frontend
-app.use(express.static(path.join(__dirname, "../public")));
+
 
 app.post("/usuarios", async (req, res) => {
     const { name, company, giftId } = req.body;
@@ -112,6 +112,13 @@ app.put('/gifts/:id/available', async (req, res) => {
 
     res.json(gift);
 });
+
+app.get("/test", (req, res) => {
+  res.json({ ok: true });
+});
+
+app.use(express.static(path.join(__dirname, "../public")));
+
 app.listen(PORT, () => {
     console.log("Servidor rodando na porta", PORT);
 });
