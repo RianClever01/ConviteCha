@@ -134,7 +134,7 @@ function renderGifts(gifts) {
             <div class="gift-box">
                 <div class="gift-info">
                     <h3>${gift.name}</h3>
-                    <p class="${gift.available ? "" : "indisponivel"}">${gift.available ? "Disponível" : "Indisponível"}</p>
+                    <p class="${gift.available ? "" : "indisponivel"}">${gift.available ? "Disponível" : "Já escolhido"}</p>
                     <button 
                     ${gift.available ? "" : "disabled"} data-id="${gift.id}">
                         Escolher
