@@ -165,7 +165,7 @@ function renderConfirmation() {
 
     let html = `
     <div class="confirmation-box">
-    <h1>Confirme suas informaçoes:</h1>
+    <h1>Confirme suas informações:</h1>
     
     <p><strong>Nome:</strong> ${guest.name}</p>
     `;
