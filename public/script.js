@@ -1,6 +1,4 @@
-﻿
-
-// lista de presentes
+﻿// lista de presentes
 const container = document.querySelector("#gift-container");
 let gifts = [];
 
@@ -136,7 +134,7 @@ function renderGifts(gifts) {
             <div class="gift-box">
                 <div class="gift-info">
                     <h3>${gift.name}</h3>
-                    <p>${gift.available ? "Disponível" : "Indisponi­vel"}</p>
+                    <p class="${gift.available ? "" : "indisponivel"}">${gift.available ? "Disponível" : "Indisponível"}</p>
                     <button 
                     ${gift.available ? "" : "disabled"} data-id="${gift.id}">
                         Escolher
@@ -189,9 +187,3 @@ function renderConfirmation() {
 
 
 loadGifts();
-
-
-
-
-
-

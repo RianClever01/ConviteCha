@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./styles.css">
@@ -32,25 +32,45 @@
                 🏡
             </div>
 
+            <span class="eyebrow">Você está convidado</span>
+
             <h1>Chá de Casa Nova</h1>
 
             <p class="subtitulo">
                 Um novo lar merece ser comemorado com pessoas especiais.
             </p>
 
-            <hr>
+            <div class="divider"><span>🌿</span></div>
 
-            <p>
+            <p class="corpo">
                 Será uma enorme alegria receber você para celebrar esse momento tão importante em nossas vidas.
             </p>
 
             <div class="informacoes">
 
-                <p>📅 <strong>22 de Agosto de 2026</strong></p>
+                <div class="info-row">
+                    <span class="info-icon">📅</span>
+                    <span class="info-text">
+                        <span class="info-label">Data</span>
+                        <span class="info-value">22 de Agosto de 2026</span>
+                    </span>
+                </div>
 
-                <p>🕓 <strong>16:00</strong></p>
+                <div class="info-row">
+                    <span class="info-icon">🕓</span>
+                    <span class="info-text">
+                        <span class="info-label">Horário</span>
+                        <span class="info-value">16:00</span>
+                    </span>
+                </div>
 
-                <p>📍 Rua Exemplo, 123</p>
+                <div class="info-row">
+                    <span class="info-icon">📍</span>
+                    <span class="info-text">
+                        <span class="info-label">Local</span>
+                        <span class="info-value">Rua Exemplo, 123</span>
+                    </span>
+                </div>
 
             </div>
 
@@ -66,13 +86,20 @@
 
     <section id="signIn-page">
         <div class="card">
-            <h1> Confirme a sua presença! </h1>
+
+            <span class="eyebrow">Passo 1 de 3</span>
+            <h1>Confirme a sua presença</h1>
+            <p class="subtitulo">Conta pra gente quem vem celebrar com a gente.</p>
 
             <div class="caixa-input">
-                <label for="name">Digite o seu nome: </label>
-                <input class="input" id="name" placeholder="Seu nome aqui">
-                <label for="company"> É casal ou vai acompanhado? digite o nome do acompanhante: </label>
-                <input class="input" id="company" placeholder="Nome do acompanhante">
+                <div>
+                    <label for="name">Seu nome</label>
+                    <input class="input" id="name" placeholder="Digite o seu nome">
+                </div>
+                <div>
+                    <label for="company">Vai levar acompanhante?</label>
+                    <input class="input" id="company" placeholder="Nome do acompanhante (opcional)">
+                </div>
             </div>
 
             <button id="nextBtn">
@@ -85,10 +112,11 @@
     <section id="gift-page">
 
         <div class="card">
-            <h1> Lista de presentes para a casa nova </h1>
+            <span class="eyebrow">Passo 2 de 3</span>
+            <h1>Lista de presentes</h1>
 
             <p class="subtitulo">
-                Se você desejar, pode contribuir com a criação de um lar e uma família feliz!.
+                Se você desejar, pode contribuir com a criação de um lar e uma família feliz!
             </p>
 
             <div id="gift-container"></div>
@@ -98,7 +126,7 @@
                     Voltar
                 </button>
                 <button id="confirmBtn">
-                    Confirmar Presença
+                    Continuar
                 </button>
             </div>
         </div>
@@ -108,6 +136,7 @@
     <section id="confirm-page" style="display:none;">
         <div class="card">
 
+            <span class="eyebrow">Passo 3 de 3</span>
             <div id="confirmation-box"></div>
             <div class="button-group">
                 <button id="backToGiftBtn">
@@ -122,8 +151,9 @@
 
     <section id="end-page" style="display:none;">
         <div class="card">
+            <div class="icone">🎉</div>
             <h1>Sua presença está confirmada!</h1>
-            <p class="subtitulo">Convidado</p>
+            <p class="subtitulo">Mal podemos esperar para receber você no nosso novo lar.</p>
         </div>
     </section>
 
