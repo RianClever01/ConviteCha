@@ -190,6 +190,31 @@ p.corpo {
   color: var(--ink);
 }
 
+.info-row-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.info-row-link:hover {
+  border-color: var(--clay);
+  background: var(--clay-soft);
+  transform: translateY(-1px);
+}
+
+.info-row-link:focus-visible {
+  outline: 2px solid var(--clay-dark);
+  outline-offset: 2px;
+}
+
+.info-arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 16px;
+  color: var(--clay-dark);
+}
+
 button {
   font-family: "Inter", sans-serif;
   margin-top: 30px;
