@@ -136,7 +136,7 @@ function renderGifts(gifts) {
                     <h3>${gift.name}</h3>
                     <p class="${gift.available ? "" : "indisponivel"}">${gift.available ? "Disponível" : "Já escolhido"}</p>
                     <button 
-                    ${gift.available ? "" : "disabled"} data-id="${gift.id}">
+                    ${gift.available ? "" : "disabled"} data-id="${gift.name}">
                         Escolher
                     </button>
                 </div>
